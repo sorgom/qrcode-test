@@ -15,10 +15,7 @@
         ];
         $generator = new QRCode($url, $options);
 
-        /* Output directly to standard output. */
-        // $generator->output_image();
-
-        /* Create bitmap image. */
+        // Create bitmap image.
         $image = $generator->render_image();
         imagepng($image, $png);
     }
@@ -32,8 +29,6 @@
             margin: auto;
         }
         div.qrcode {
-            /* width: 100%; */
-            /* align: center; */
             background-color: green;
         }
     </style>    
